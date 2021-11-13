@@ -1,5 +1,11 @@
 import React, { useReducer } from "react";
-
+import { 
+   INCREMENT,
+   DECREMENT,
+   MULTIPLY_BY_3,
+   DIVIDE_BY_2,
+   RESET 
+} from "./types";
 export const CountContext = React.createContext({});
 
 const initialState = {
@@ -9,27 +15,27 @@ const initialState = {
 // when using dispatch, just pass in the type we want to use
 function reducer(state, action) {
    switch(action.type) {
-      case "INCREMENT":
+      case INCREMENT:
          return {
             count: state.count + 1,
          };
 
-      case "DECREMENT":
+      case DECREMENT:
          return {
             count: state.count - 1,
          };
 
-      case "MULTIPLY-BY-3":
+      case MULTIPLY_BY_3:
          return {
             count: state.count * 3,
          }
 
-      case "DIVIDE-BY-2":
+      case DIVIDE_BY_2:
          return {
             count: state.count / 2,
          }
       
-      case "CLEAR":
+      case RESET:
          return {
             count: 0,
          };
