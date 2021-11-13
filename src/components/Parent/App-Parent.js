@@ -1,8 +1,8 @@
 import React from "react";
-import Parent from "./components/Parent/Parent";
-import Child from "./components/Parent/Child";
-import Child2 from "./components/Parent/Child2";
-import Child3 from "./components/Parent/Child3";
+import Parent from "./Parent";
+import Child from "./Child";
+import Child2 from "./Child2";
+import Child3 from "./Child3";
 import './App.css';
 
 function App() {
