@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-function Parent() {
+function Parent({children}) {
+   // console.log(props)
    return (
       <div>
-         
+         {children}
       </div>
    )
 }
